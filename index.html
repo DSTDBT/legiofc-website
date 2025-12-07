@@ -13,7 +13,7 @@
         body{font-family:'Inter',sans-serif;background:var(--blue);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 20px;position:relative;overflow-x:hidden}
         .ribbon-bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;overflow:hidden}
         .ribbon-bg svg{position:absolute;width:150%;height:150%;top:-25%;left:-25%;opacity:0.15}
-        .container{max-width:500px;width:100%;text-align:center;position:relative;z-index:1}
+        .container{max-width:900px;width:100%;text-align:center;position:relative;z-index:1}
         .logo{width:500px;height:500px;margin:0 auto 20px;animation:fadeIn 1s ease-out}
         .logo img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 15px 40px rgba(0,0,0,0.4))}
         .motto-english{font-family:'Cinzel',serif;font-size:11px;font-weight:400;letter-spacing:3px;color:rgba(248,246,241,0.7);text-transform:uppercase;margin-bottom:8px;animation:fadeIn 1s ease-out 0.2s backwards}
@@ -33,7 +33,8 @@
         .supporters-section{text-align:center;margin-bottom:35px;animation:fadeIn 1s ease-out 0.65s backwards}
         .supporters-section .section-label{margin-bottom:10px}
         .supporters-text{font-family:'Inter',sans-serif;font-size:14px;font-weight:300;color:rgba(248,246,241,0.7);margin-bottom:20px}
-        .video-container{position:relative;width:100%;max-width:400px;margin:0 auto 25px;aspect-ratio:16/9;border:1px solid var(--gold);border-radius:4px;overflow:hidden}
+        .videos-grid{display:flex;gap:15px;justify-content:center;margin-bottom:25px;flex-wrap:wrap}
+        .video-container{position:relative;width:280px;aspect-ratio:16/9;border:1px solid var(--gold);border-radius:4px;overflow:hidden}
         .video-container iframe{position:absolute;top:0;left:0;width:100%;height:100%}
         .btn-supporters{display:inline-flex;align-items:center;gap:10px;padding:12px 35px;font-family:'Cinzel',serif;font-size:12px;font-weight:500;letter-spacing:2px;text-decoration:none;text-transform:uppercase;transition:all 0.3s ease;cursor:pointer;border:1px solid var(--gold);background:transparent;color:var(--gold)}
         .btn-supporters:hover{background:var(--gold);color:var(--blue-dark)}
@@ -43,7 +44,7 @@
         footer{margin-top:60px;animation:fadeIn 1s ease-out 0.8s backwards}
         footer p{font-family:'Inter',sans-serif;color:rgba(248,246,241,0.25);font-size:11px;letter-spacing:1px}
         @keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-        @media(max-width:480px){body{padding:40px 10px;justify-content:flex-start;padding-top:20px}.container{max-width:320px;width:100%}.logo{width:280px;height:280px;margin:0 auto 15px}.motto-english{font-size:9px;letter-spacing:3px}.founded{font-size:12px;letter-spacing:6px;margin-bottom:35px}.section-label{font-size:9px;letter-spacing:3px;margin-bottom:20px}.camps-grid{gap:25px}.camp-logo-link{height:55px;margin-bottom:12px}.tst-logo{height:45px}.cary-logo{height:55px}.camp-buttons{gap:8px}.btn-camp{padding:10px 25px;font-size:10px;letter-spacing:1.5px}.supporters-text{font-size:12px}.btn-supporters{padding:10px 25px;font-size:10px}.instagram-icon{width:16px;height:16px}.contact-link{font-size:10px}footer p{font-size:10px}.video-container{max-width:100%}}
+        @media(max-width:480px){body{padding:40px 10px;justify-content:flex-start;padding-top:20px}.container{max-width:320px;width:100%}.logo{width:280px;height:280px;margin:0 auto 15px}.motto-english{font-size:9px;letter-spacing:3px}.founded{font-size:12px;letter-spacing:6px;margin-bottom:35px}.section-label{font-size:9px;letter-spacing:3px;margin-bottom:20px}.camps-grid{gap:25px}.camp-logo-link{height:55px;margin-bottom:12px}.tst-logo{height:45px}.cary-logo{height:55px}.camp-buttons{gap:8px}.btn-camp{padding:10px 25px;font-size:10px;letter-spacing:1.5px}.supporters-text{font-size:12px}.btn-supporters{padding:10px 25px;font-size:10px}.instagram-icon{width:16px;height:16px}.contact-link{font-size:10px}footer p{font-size:10px}.videos-grid{flex-direction:column;align-items:center}.video-container{width:100%;max-width:300px}}
     </style>
 </head>
 <body>
@@ -86,8 +87,16 @@
         <div class="supporters-section">
             <p class="section-label">Supporters</p>
             <p class="supporters-text">Come watch us play in our next tournament</p>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/fnea1Hsxqb4" title="Legio FC Live" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="videos-grid">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/fnea1Hsxqb4" title="Legio FC Live 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/vASAFuKIAlU" title="Legio FC Live 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/49Acr5jGXBE" title="Legio FC Live 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
             <a href="https://www.instagram.com/legiofc" class="btn-supporters" target="_blank">
                 <svg class="instagram-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
