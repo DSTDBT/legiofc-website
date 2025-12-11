@@ -26,7 +26,10 @@
         .camp-logo{height:100%;width:auto;object-fit:contain}
         .tst-logo{filter:invert(1) brightness(2);height:75px}
         .cary-logo{height:90px}
-        .camp-title{font-family:'Cinzel',serif;font-size:14px;font-weight:600;letter-spacing:2px;color:var(--gold);text-transform:uppercase;height:90px;display:flex;align-items:center;justify-content:center;margin-bottom:15px}
+        .camp-title{font-family:'Cinzel',serif;font-size:14px;font-weight:600;letter-spacing:2px;color:#fff;text-transform:uppercase;height:90px;display:flex;align-items:center;justify-content:center;margin-bottom:15px;text-decoration:none;transition:transform 0.3s ease,opacity 0.3s ease}
+        .camp-title:hover{transform:scale(1.05);opacity:0.9}
+        .camp-title svg{width:40px;height:40px;margin-bottom:8px;fill:#fff}
+        .camp-title-content{display:flex;flex-direction:column;align-items:center}
         .camp-buttons{display:flex;flex-direction:column;gap:8px}
         .btn-camp{display:flex;align-items:center;justify-content:center;gap:12px;padding:10px 30px;font-family:'Cinzel',serif;font-size:11px;font-weight:500;letter-spacing:2px;text-decoration:none;text-transform:uppercase;transition:all 0.3s ease;cursor:pointer;border:1px solid var(--gold);background:transparent;color:var(--gold)}
         .btn-camp:hover{background:var(--gold);color:var(--blue-dark)}
@@ -52,7 +55,7 @@
         footer{margin-top:60px;animation:fadeIn 1s ease-out 0.8s backwards}
         footer p{font-family:'Inter',sans-serif;color:rgba(248,246,241,0.25);font-size:11px;letter-spacing:1px}
         @keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-        @media(max-width:480px){body{padding:40px 10px;justify-content:flex-start;padding-top:20px}.container{max-width:320px;width:100%}.logo{width:280px;height:280px;margin:0 auto 15px}.motto-english{font-size:9px;letter-spacing:3px}.founded{font-size:12px;letter-spacing:6px;margin-bottom:35px}.section-label{font-size:9px;letter-spacing:3px;margin-bottom:20px}.camps-grid{gap:10px;flex-wrap:wrap}.camp-column{min-width:95px}.camp-logo-link{height:50px;margin-bottom:10px}.tst-logo{height:40px}.cary-logo{height:50px}.camp-title{height:50px;font-size:10px;margin-bottom:10px}.camp-buttons{gap:5px}.btn-camp{padding:8px 15px;font-size:8px;letter-spacing:1px}.supporters-text{font-size:12px}.btn-supporters{padding:10px 25px;font-size:10px}.instagram-icon{width:16px;height:16px}.contact-link{font-size:10px}footer p{font-size:10px}.videos-grid{flex-direction:column;align-items:center}.video-container{width:100%;max-width:300px}.channel-links{flex-direction:column;align-items:center;gap:10px}}
+        @media(max-width:480px){body{padding:40px 10px;justify-content:flex-start;padding-top:20px}.container{max-width:320px;width:100%}.logo{width:280px;height:280px;margin:0 auto 15px}.motto-english{font-size:9px;letter-spacing:3px}.founded{font-size:12px;letter-spacing:6px;margin-bottom:35px}.section-label{font-size:9px;letter-spacing:3px;margin-bottom:20px}.camps-grid{gap:10px;flex-wrap:wrap}.camp-column{min-width:95px}.camp-logo-link{height:50px;margin-bottom:10px}.tst-logo{height:40px}.cary-logo{height:50px}.camp-title{height:50px;font-size:9px;margin-bottom:10px}.camp-title svg{width:25px;height:25px;margin-bottom:4px}.camp-buttons{gap:5px}.btn-camp{padding:8px 15px;font-size:8px;letter-spacing:1px}.supporters-text{font-size:12px}.btn-supporters{padding:10px 25px;font-size:10px}.instagram-icon{width:16px;height:16px}.contact-link{font-size:10px}footer p{font-size:10px}.videos-grid{flex-direction:column;align-items:center}.video-container{width:100%;max-width:300px}.channel-links{flex-direction:column;align-items:center;gap:10px}}
     </style>
 </head>
 <body>
@@ -74,7 +77,7 @@
         <div class="logo"><img src="logo.png" alt="Legio Football Club Crest"></div>
         <p class="motto-english">We Gather The Best Against The World</p>
         <p class="founded">MMXXV</p>
-        <p class="section-label">Player ID Camps</p>
+        <p class="section-label">Player ID Camps & Regional Tournaments</p>
         <div class="camps-grid">
             <div class="camp-column">
                 <a href="https://tst7v7.com/" target="_blank" class="camp-logo-link"><img src="tst-logo.png" alt="TST - The Soccer Tournament" class="camp-logo tst-logo"></a>
@@ -89,15 +92,20 @@
             <div class="camp-column">
                 <a href="https://www.townofcary.org/carycup" target="_blank" class="camp-logo-link"><img src="cary-cup-logo.png" alt="The Cary Cup" class="camp-logo cary-logo"></a>
                 <div class="camp-buttons">
-                    <a href="https://forms.office.com/r/ThQ3HTLwwn" class="btn-camp" target="_blank">Toronto</a>
-                    <a href="https://forms.office.com/r/ThQ3HTLwwn" class="btn-camp" target="_blank">Miami</a>
-                    <a href="https://forms.office.com/r/ThQ3HTLwwn" class="btn-camp" target="_blank">Chicago</a>
-                    <a href="https://forms.office.com/r/ThQ3HTLwwn" class="btn-camp" target="_blank">Boston</a>
-                    <a href="https://forms.office.com/r/ThQ3HTLwwn" class="btn-camp" target="_blank">Dallas</a>
+                    <a href="https://forms.office.com/r/ZCWZU6yHzg" class="btn-camp" target="_blank">Toronto</a>
+                    <a href="https://forms.office.com/r/ZCWZU6yHzg" class="btn-camp" target="_blank">Miami</a>
+                    <a href="https://forms.office.com/r/ZCWZU6yHzg" class="btn-camp" target="_blank">Chicago</a>
+                    <a href="https://forms.office.com/r/ZCWZU6yHzg" class="btn-camp" target="_blank">Boston</a>
+                    <a href="https://forms.office.com/r/ZCWZU6yHzg" class="btn-camp" target="_blank">Dallas</a>
                 </div>
             </div>
             <div class="camp-column">
-                <div class="camp-title">Regional<br>Tournaments</div>
+                <a href="https://forms.office.com/r/jzGzrQRpcu" target="_blank" class="camp-title">
+                    <div class="camp-title-content">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        Regional<br>Tournaments
+                    </div>
+                </a>
                 <div class="camp-buttons">
                     <a href="https://forms.office.com/r/jzGzrQRpcu" class="btn-camp" target="_blank">Toronto</a>
                     <a href="https://forms.office.com/r/jzGzrQRpcu" class="btn-camp" target="_blank">Miami</a>
