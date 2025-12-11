@@ -26,10 +26,10 @@
         .camp-logo{height:100%;width:auto;object-fit:contain}
         .tst-logo{filter:invert(1) brightness(2);height:75px}
         .cary-logo{height:90px}
-        .camp-title{font-family:'Cinzel',serif;font-size:12px;font-weight:600;letter-spacing:2px;color:#fff;text-transform:uppercase;height:90px;display:flex;align-items:center;justify-content:center;margin-bottom:15px;text-decoration:none;transition:transform 0.3s ease,opacity 0.3s ease}
+        .regional-logo{height:75px;width:auto;object-fit:contain}
+        .camp-title{font-family:'Cinzel',serif;font-size:12px;font-weight:600;letter-spacing:2px;color:#fff;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;margin-bottom:15px;text-decoration:none;transition:transform 0.3s ease,opacity 0.3s ease}
         .camp-title:hover{transform:scale(1.05);opacity:0.9}
-        .camp-title svg{width:60px;height:50px;margin-bottom:6px}
-        .camp-title-content{display:flex;flex-direction:column;align-items:center}
+        .camp-title img{height:70px;width:auto;margin-bottom:8px}
         .btn-camp{display:flex;align-items:center;justify-content:center;gap:12px;padding:12px 35px;font-family:'Cinzel',serif;font-size:12px;font-weight:500;letter-spacing:2px;text-decoration:none;text-transform:uppercase;transition:all 0.3s ease;cursor:pointer;border:1px solid var(--gold);background:transparent;color:var(--gold)}
         .btn-camp:hover{background:var(--gold);color:var(--blue-dark)}
         .divider-line{width:60px;height:1px;background:var(--gold);margin:0 auto 35px;opacity:0.4;animation:fadeIn 1s ease-out 0.6s backwards}
@@ -54,7 +54,7 @@
         footer{margin-top:60px;animation:fadeIn 1s ease-out 0.8s backwards}
         footer p{font-family:'Inter',sans-serif;color:rgba(248,246,241,0.25);font-size:11px;letter-spacing:1px}
         @keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-        @media(max-width:480px){body{padding:40px 10px;justify-content:flex-start;padding-top:20px}.container{max-width:320px;width:100%}.logo{width:280px;height:280px;margin:0 auto 15px}.motto-english{font-size:9px;letter-spacing:3px}.founded{font-size:12px;letter-spacing:6px;margin-bottom:35px}.section-label{font-size:9px;letter-spacing:3px;margin-bottom:20px}.camps-grid{gap:20px;flex-wrap:wrap}.camp-column{min-width:95px}.camp-logo-link{height:50px;margin-bottom:10px}.tst-logo{height:40px}.cary-logo{height:50px}.camp-title{height:50px;font-size:9px;margin-bottom:10px}.camp-title svg{width:40px;height:35px;margin-bottom:4px}.btn-camp{padding:10px 20px;font-size:10px;letter-spacing:1.5px}.supporters-text{font-size:12px}.btn-supporters{padding:10px 25px;font-size:10px}.instagram-icon{width:16px;height:16px}.contact-link{font-size:10px}footer p{font-size:10px}.videos-grid{flex-direction:column;align-items:center}.video-container{width:100%;max-width:300px}.channel-links{flex-direction:column;align-items:center;gap:10px}}
+        @media(max-width:480px){body{padding:40px 10px;justify-content:flex-start;padding-top:20px}.container{max-width:320px;width:100%}.logo{width:280px;height:280px;margin:0 auto 15px}.motto-english{font-size:9px;letter-spacing:3px}.founded{font-size:12px;letter-spacing:6px;margin-bottom:35px}.section-label{font-size:9px;letter-spacing:3px;margin-bottom:20px}.camps-grid{gap:20px;flex-wrap:wrap}.camp-column{min-width:95px}.camp-logo-link{height:50px;margin-bottom:10px}.tst-logo{height:40px}.cary-logo{height:50px}.camp-title{font-size:9px}.camp-title img{height:45px;margin-bottom:5px}.btn-camp{padding:10px 20px;font-size:10px;letter-spacing:1.5px}.supporters-text{font-size:12px}.btn-supporters{padding:10px 25px;font-size:10px}.instagram-icon{width:16px;height:16px}.contact-link{font-size:10px}footer p{font-size:10px}.videos-grid{flex-direction:column;align-items:center}.video-container{width:100%;max-width:300px}.channel-links{flex-direction:column;align-items:center;gap:10px}}
     </style>
 </head>
 <body>
@@ -88,15 +88,8 @@
             </div>
             <div class="camp-column">
                 <a href="https://forms.office.com/r/jzGzrQRpcu" target="_blank" class="camp-title">
-                    <div class="camp-title-content">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 40" fill="#fff">
-                            <!-- Three Lightning Bolts matching the badge style -->
-                            <polygon points="15,0 12,12 16,12 8,28 13,28 4,40 18,24 13,24 20,10 15,10 20,0"/>
-                            <polygon points="30,0 27,12 31,12 23,28 28,28 19,40 33,24 28,24 35,10 30,10 35,0"/>
-                            <polygon points="45,0 42,12 46,12 38,28 43,28 34,40 48,24 43,24 50,10 45,10 50,0"/>
-                        </svg>
-                        Regional<br>Tournaments
-                    </div>
+                    <img src="regional-icon.png" alt="Regional Tournaments">
+                    Regional<br>Tournaments
                 </a>
                 <a href="https://forms.office.com/r/jzGzrQRpcu" class="btn-camp" target="_blank">ID Camps</a>
             </div>
